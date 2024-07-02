@@ -116,3 +116,13 @@ button:hover {
   border-bottom: 1px solid rgba(29, 27, 27, 0.17);
   padding-bottom: 5px;
 }
+
+@media (max-width: 600px) {
+  .calculator-container {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-history {
+    display: none;
+  }
+}
