@@ -5,7 +5,6 @@
 }
 html {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
 }
 
 body {
@@ -43,14 +42,14 @@ body {
   font-weight: 500;
 }
 .currentNumber {
-  font-size: 2.6rem;
+  font-size: 35px;
 }
 .previousNumber {
   color: rgb(250, 239, 239);
-  font-size: 1.4rem;
+  font-size: 20px;
 }
 .mathSign {
-  font-size: 1.6rem;
+  font-size: 23px;
 }
 .panel {
   height: 80%;
@@ -61,7 +60,7 @@ body {
   border-radius: 5px;
 }
 .panel button {
-  font-size: 1.5rem;
+  font-size: 25px;
   background-color: rgba(0, 0, 0, 0.45);
   cursor: pointer;
   color: white;
@@ -101,20 +100,20 @@ button:hover {
 }
 .history-title {
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 20px;
 }
 .history-btn {
   color: white;
   background: rgba(29, 27, 27, 0.603);
   border: none;
-  font-size: 1.1rem;
+  font-size: 20px;
   padding: 8px;
   border-radius: 10px;
   cursor: pointer;
   font-weight: 500;
   display: none;
   outline: none;
-  margin: 5px auto;
+  margin: 10px auto;
 }
 .history-btn.active {
   display: block;
@@ -124,7 +123,7 @@ button:hover {
   letter-spacing: 1px;
   border-bottom: 1px solid rgba(29, 27, 27, 0.17);
   padding-bottom: 5px;
-  font-size: 1.2rem;
+  font-size: 20px;
 }
 
 @media (max-width: 600px) {
@@ -137,5 +136,16 @@ button:hover {
     width: 100%;
     max-width: 370px;
     margin: 10px 0;
+  }
+  .history-title {
+    font-size: 23px;
+    padding: 12px;
+  }
+  .history-btn {
+    font-size: 23px;
+    margin-top: 10px;
+  }
+  .history-item {
+    font-size: 22px;
   }
 }
