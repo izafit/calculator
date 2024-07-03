@@ -3,6 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --display-color: rgba(29, 27, 27, 0.151);
+  --operator-color: #eb7897;
+  --bg-color: linear-gradient(-20deg, #ec8f9f 0%, #e9bfa4 100%);
+}
+
+[data-theme="dark"] {
+  --display-color: rgba(29, 27, 27, 0.151);
+  --operator-color: #76abae;
+  --bg-color: linear-gradient(-20deg, #222831 0%, #51565d 100%);
+}
 html {
   font-family: "Montserrat", sans-serif;
 }
