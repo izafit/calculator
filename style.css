@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --display-color: rgba(29, 27, 27, 0.151);
   --operator-color: #eb7897;
@@ -14,6 +15,7 @@
   --operator-color: #76abae;
   --bg-color: linear-gradient(-20deg, #222831 0%, #51565d 100%);
 }
+
 html {
   font-family: "Montserrat", sans-serif;
 }
@@ -22,7 +24,7 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  background-image: linear-gradient(-20deg, #ec8f9f 0%, #e9bfa4 100%);
+  background-image: var(--bg-color);
   align-items: center;
 }
 
@@ -38,11 +40,10 @@ body {
   max-width: 370px;
 }
 .display {
-  height: 100px;
   width: 100%;
   min-height: 20%;
   max-height: min-content;
-  background-color: rgba(29, 27, 27, 0.151);
+  background-color: var(--display-color);
   border-radius: 5px;
   color: white;
   word-break: break-all;
@@ -61,7 +62,7 @@ body {
   font-size: 20px;
 }
 .mathSign {
-  font-size: 22px;
+  font-size: 23px;
 }
 .panel {
   height: 80%;
@@ -73,7 +74,7 @@ body {
 }
 .panel button {
   font-size: 25px;
-  background-color: rgba(0, 0, 0, 0.45);
+  /* background-color: rgba(0, 0, 0, 0.45); */
   cursor: pointer;
   color: white;
   border: none;
@@ -81,9 +82,20 @@ body {
   transition: background-color 0.2s ease-in-out;
   border-radius: 5px;
 }
+
+
+.equals {
+  background-color: var(--operator-color);
+}
+
+.number, .clear, .delete, .operator {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
 button:hover {
   background-color: rgba(0, 0, 0, 0.545);
 }
+
 .plus {
   grid-row: -3/-1;
   grid-column: -1/-2;
@@ -98,7 +110,7 @@ button:hover {
 }
 .calculator-history {
   height: 60vh;
-  margin: 0 20px;
+  margin: 0 20px 0 20px;
   width: 200px;
   background-color: rgba(20, 27, 27, 0.151);
   color: rgb(250, 244, 244);
@@ -138,7 +150,6 @@ button:hover {
   font-size: 20px;
 }
 
-
 .checkbox {
   position: absolute;
   margin: 20px auto;
@@ -175,12 +186,11 @@ button:hover {
 }
 
 
-
 @media (max-width: 600px) {
   .calculator-container {
     flex-direction: column;
     align-items: center;
-    
+    margin-top: 30px;
   }
   .calculator-history {
     width: 100%;
@@ -199,3 +209,4 @@ button:hover {
     font-size: 22px;
   }
 }
+
