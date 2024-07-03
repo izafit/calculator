@@ -86,7 +86,7 @@ button:hover {
 }
 .calculator-history {
   height: 60vh;
-  margin: 0 20px 0 20px;
+  margin: 0 20px;
   width: 200px;
   background-color: rgba(20, 27, 27, 0.151);
   color: rgb(250, 244, 244);
