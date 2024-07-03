@@ -27,6 +27,7 @@ body {
   max-width: 370px;
 }
 .display {
+  height: 100px;
   width: 100%;
   min-height: 20%;
   max-height: min-content;
